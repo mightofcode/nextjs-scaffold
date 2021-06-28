@@ -1,9 +1,5 @@
 import styled from "styled-components";
 import * as React from "react";
-import Header from "./header";
-import Footer from "./footer/index";
-import Toast from "./toast/index";
-import Divider from "@/component/utils/divider";
 
 const Wrapper = styled.div`
   position: relative;
@@ -27,13 +23,7 @@ const ToastWrapper = styled.div`
 export default function Layout({ children }) {
   return (
     <Wrapper>
-      <Header />
       <FlexGrow>{children}</FlexGrow>
-      <ToastWrapper>
-        <Toast />
-      </ToastWrapper>
-
-      <Footer />
     </Wrapper>
   );
 }

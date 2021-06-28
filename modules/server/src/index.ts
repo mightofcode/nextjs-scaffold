@@ -12,11 +12,12 @@ import { Server } from "socket.io";
 dotenv.config();
 
 const mongoUri = process.env.MONGODB_URI;
+
 if (!mongoUri) {
   console.error("MONGODB_URI is null", chalk.red("✗"));
   process.exit();
 }
-
+console.log("connect to ", mongoUri);
 mongoose.connect(mongoUri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,

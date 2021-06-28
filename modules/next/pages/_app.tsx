@@ -10,7 +10,6 @@ import "nprogress/nprogress.css";
 import "semantic-ui-css/semantic.min.css";
 import "@/styles/globals.css";
 import * as React from "react";
-import Auth from "@/component/Auth";
 
 NProgress.configure({
   minimum: 0.3,
@@ -26,8 +25,6 @@ Router.events.on("routeChangeError", () => NProgress.done());
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Provider store={store}>
-      <script>0</script>
-      <Auth />
       <Component {...pageProps} />
     </Provider>
   );

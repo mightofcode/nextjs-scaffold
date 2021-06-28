@@ -1,13 +1,7 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
 import { combineReducers } from "@reduxjs/toolkit";
 
-import toastReducer from "./toastReducer";
-import userReducer from "./userReducer";
-
-const rootReducer = combineReducers({
-  toast: toastReducer,
-  user: userReducer,
-});
+const rootReducer = combineReducers({});
 
 export const store = configureStore({
   reducer: rootReducer,

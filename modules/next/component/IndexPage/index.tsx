@@ -3,10 +3,6 @@ import { useRouter } from "next/router";
 import { useSelector, useDispatch } from "react-redux";
 import styled from "styled-components";
 import * as React from "react";
-import Col1 from "@/component/indexPage/Col1";
-import Col2 from "@/component/indexPage/Col2";
-import Divider from "@/component/utils/divider";
-import PageNav from "@/component/pageNav";
 
 const Wrapper = styled.div`
   display: flex;
@@ -30,9 +26,5 @@ export default function IndexPage({ posts, tabs, tab, hotPosts }) {
     console.log(posts, tabs, tab, hotPosts);
   }, []);
 
-  return (
-    <Wrapper>
-      123
-    </Wrapper>
-  );
+  return <Wrapper>hello world</Wrapper>;
 }

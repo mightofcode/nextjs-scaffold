@@ -3,13 +3,11 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import styled from "styled-components";
 import PageHead from "@/component/PageHead";
-import Layout from "@/component/layout";
-import Container from "@/component/container";
 import * as React from "react";
-import Card32 from "@/component/Card32";
 import NotFound from "@/component/notFound";
 import { withLoginUser, withLoginUserRedux } from "@/lib/user";
-import PrivacyPolicy from "@/component/privacy-policy";
+import Layout from "@/component/Layout";
+import Container from "@/component/Container";
 
 const Wrapper = styled.div``;
 
@@ -20,7 +18,7 @@ export default withLoginUserRedux(() => {
 
   return (
     <>
-      <PageHead title="nextjs-scaffold"/>
+      <PageHead title="nextjs-scaffold" />
       <Layout>
         <Container>
           <NotFound />
