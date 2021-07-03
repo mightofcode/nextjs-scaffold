@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import * as React from "react";
+import Header from "@/component/Header";
+import Footer from "@/component/Footer";
 
 const Wrapper = styled.div`
   position: relative;
@@ -13,17 +15,13 @@ const FlexGrow = styled.div`
   position: relative;
   flex-grow: 1;
 `;
-const ToastWrapper = styled.div`
-  position: absolute;
-  top: 76px;
-  right: 160px;
-  min-width: 272px;
-`;
 
 export default function Layout({ children }) {
   return (
     <Wrapper>
+      <Header />
       <FlexGrow>{children}</FlexGrow>
+      <Footer />
     </Wrapper>
   );
 }
